@@ -33,6 +33,7 @@ a {
 .btn {
   display: inline-block;
   width: fit-content;
+  cursor: pointer;
 }
 
 .btn-block {
@@ -158,4 +159,82 @@ a {
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer */
+#footer h2 {
+  margin-bottom: 20px;
+}
+
+#footer {
+  background-color: var(--dark-color);
+  padding: 1rem 8rem;
+}
+
+#footer * {
+  color: var(--light-color);
+}
+
+#footer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#footer .logo img,
+#footer .logo p {
+  width: 150px;
+}
+
+#footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer .logo p {
+  font-size: 1.1rem;
+}
+
+#footer .join-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 3rem;
+}
+
+#footer .join-us .btn,
+#footer .join-us input {
+  width: 100%;
+  margin: 2px 0;
+  border: none;
+}
+
+#footer .join-us input {
+  height: 30px;
+}
+
+#footer .links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+#footer .links h2 {
+  margin-bottom: 15px;
+}
+
+#footer .links li {
+  border-bottom: 1px dotted black;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+#footer .follow-us {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+#footer .links .btn:hover {
+  color: var(--primary-color);
 }
