@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #2a9d8f;
+  --light-color: #f8f9fa;
+  --dark-color: #6c757c;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+/* Utils CSS */
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-selected {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+}
+
+/* Navbar */
+#navbar {
+  background-color: var(--light-color);
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  padding: 10px 5%;
+  position: sticky;
+  top: 0;
+}
+
+#navbar .logo img {
+  max-width: 70px;
+}
+
+#navbar .logo {
+  text-align: center;
+}
+
+#navbar .social-icons {
+  justify-content: flex-start;
+}
+
+#navbar .social-icons a {
+  margin: 0 0.2rem;
+}
+
+#navbar ul li {
+  margin: 0 0.6rem;
+}
+
+#navbar ul,
+#navbar .social-icons {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
