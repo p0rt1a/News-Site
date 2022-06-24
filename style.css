@@ -30,15 +30,47 @@ a {
 }
 
 /* Utils CSS */
+.btn {
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn-block {
+  margin: 0.5rem 0;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
 
-.btn-selected {
+.btn-selected,
+.btn-primary {
   background-color: var(--primary-color);
   color: var(--light-color);
   padding: 0.4rem 0.7rem;
   border-radius: 4px;
+}
+
+.budge-sport {
+  background-color: var(--light-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  color: var(--dark-color);
+  width: fit-content;
+}
+
+.budge-health {
+  background-color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  color: var(--light-color);
+  width: fit-content;
+}
+
+.news-card {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 1rem;
 }
 
 /* Navbar */
@@ -49,6 +81,7 @@ a {
   padding: 10px 5%;
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 #navbar .logo img {
@@ -77,4 +110,52 @@ a {
   align-items: center;
   font-size: 1.2rem;
   color: var(--dark-color);
+}
+
+/* Header */
+#header {
+  height: 60vh;
+  background: url(img/rowing.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#header * {
+  z-index: 3;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+#header .content {
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 15%;
+  height: 100%;
+  justify-content: center;
+}
+
+/* News */
+#news {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 12rem;
+}
+
+#news header {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
