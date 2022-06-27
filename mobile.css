@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  #navbar {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+  }
+
+  #navbar .logo {
+    text-align: left;
+  }
+
+  #navbar ul {
+    text-align: right;
+  }
+
+  #navbar ul {
+    justify-content: flex-end;
+  }
+
+  #navbar .social-icons {
+    display: none;
+  }
+
+  #news {
+    margin: 1rem 1rem;
+  }
+
+  #footer {
+    padding: 1rem 0;
+  }
+
+  #footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  #footer .logo img {
+    width: 80px;
+  }
+
+  #footer .join-us,
+  #footer .links,
+  #footer .follow-us {
+    padding: 0 10px;
+  }
+
+  #footer .links li {
+    font-size: 1rem;
+  }
+}

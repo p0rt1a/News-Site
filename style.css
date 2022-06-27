@@ -30,6 +30,14 @@ a {
 }
 
 /* Utils CSS */
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 .btn {
   display: inline-block;
   width: fit-content;
@@ -138,7 +146,7 @@ a {
   color: var(--light-color);
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 60%;
   margin-left: 15%;
   height: 100%;
   justify-content: center;
